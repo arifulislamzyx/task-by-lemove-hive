@@ -11,14 +11,8 @@ import bg from "../../../public/assets/header-2-bg.jpg";
 
 export default function Header() {
   return (
-    <section className="mx-auto relative w-full  py-24 overflow-hidden">
-      <div className="absolute top-0 left-0 w-[300px] md:w-[490px] h-auto z-0">
-        {/* <Image
-          src={bgLeft}
-          alt="BG Left"
-          className="w-full h-auto object-contain"
-        /> */}
-      </div>
+    <div className="mx-auto relative w-full  py-24 overflow-hidden">
+      <div className="absolute top-0 left-0 w-[300px] md:w-[490px] h-auto z-0"></div>
       <div className="absolute top-0 right-0 w-[300px] md:w-[490px] h-auto z-0">
         <Image
           src={bgRight}
@@ -106,6 +100,6 @@ export default function Header() {
           <Image src={bg} alt="star" width={196} height={190} />
         </div>
       </section>
-    </section>
+    </div>
   );
 }

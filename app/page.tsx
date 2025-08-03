@@ -4,10 +4,10 @@ import SponsorsSection from "@/sections/home/sponsers";
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       <Header />
       <ConferenceTimeline />
       <SponsorsSection />
-    </div>
+    </>
   );
 }
