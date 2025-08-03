@@ -17,13 +17,13 @@ export default function ConferenceTimeline() {
               return (
                 <div
                   key={j}
-                  className={`flex items-start justify-between gap-6 mb-8  ${
+                  className={`flex flex-col-reverse lg:items-start lg:justify-between gap-6 mb-8  ${
                     isLeft
-                      ? "flex-row-reverse relative right-[7%] "
-                      : "  relative left-[5.5%] flex-row-reverse lg:flex-row"
+                      ? " lg:flex-row-reverse relative right-10 lg:right-[7.5%] "
+                      : "relative -left-10 lg:left-[5.5%]  lg:flex-row"
                   }`}
                 >
-                  <div className="w-1/2">
+                  <div className="w-[90%] ml-12 lg:ml-0 lg:w-1/2">
                     <div className="bg-[#F9FAFB] shadow-md p-4 rounded-lg border-t-4 border-[#CDCDCD]">
                       <div className="flex items-center gap-2 mb-1">
                         <div className="w-2.5 h-2.5 bg-yellow-400 rounded-full" />
@@ -35,12 +35,12 @@ export default function ConferenceTimeline() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-center text-center w-10">
+                  <div className="flex flex-col items-center text-center w-10 absolute left-0 lg:static">
                     <div
-                      className={`rounded-full border-1 p-1.5 bg-white z-10  ${
+                      className={`rounded-full border-1 p-1.5 bg-white z-10   ${
                         i === 0 && j === 0
                           ? "border-yellow-400 left-0"
-                          : "border-gray-300"
+                          : "border-gray-300 left-0"
                       }`}
                     >
                       <Zap
@@ -53,7 +53,7 @@ export default function ConferenceTimeline() {
                       />
                     </div>
                   </div>
-                  <span className="text-xs mt-2 text-gray-500 whitespace-nowrap">
+                  <span className="text-xs mt-2 text-gray-500 whitespace-nowrap ml-12 lg:ml-0">
                     {day.date}
                   </span>
                   <div className="w-1/2"></div>
